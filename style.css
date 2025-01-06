@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    background-color: #e7d7c9;
+    font-family: sans-serif;
+}
+.main-box{
+    min-height: 1000px;
+    background-color: #a38f85;
+    border-radius: 4em;
+    color: black;
+    padding: 20px;
+}
+.main-area{
+    margin-top: 20px;
+    height: 850px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    min-width: 610px;
+    height: 850px;
+    background-color: #e7d7c9;
+    border-radius: 4em;
+    padding: 1em;
+    color: black;
+    margin-top: 1em;
+}
+.main-info{
+    background-color: #d4b2a7;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main-info>img{
+    border-radius: 2em;
+    margin: 1em;
+}
+.main-info>a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 300px;
+    font-size: larger;
+    font-weight: 900;
+    width: 200px;
+}
+.main-info>a:hover{
+    background-color: #a38f85;
+    
+    border-radius: 1em;
+    color: #e7d7c9;
+}
+.main-info>div{
+    padding: 1em;
+}
+.list{
+    list-style-type: none;
+    margin-top: 1em;
+}
+table{
+    border: 2px solid #e7d7c9;
+    width: 300px;
+    height: 200px;
+    margin-top: 5px;
+}
+th,td{
+    border: 1px solid #e7d7c9;
+}
+.img-area{
+    background-color: #d4b2a7;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.img-area>img{
+    border-radius: 20%;
+}
+td>span{
+    color: red;
+}
+.input-area>input{
+    outline: none;
+    border: none;
+    background-color: #e7d7c9;
+    width: 300px;
+    margin-right: 20px;
+}
+.input-area>input:focus{
+    border-bottom: 2px solid  #a38f85;
+    transition: 0.2s;
+}
+.input-area>button{
+    background-color: #a38f85 ;
+    border: none;
+}
+.input-area>button:hover{
+    background-color:#d4b2a7 ;
+}
+@media (max-width:1400px) {
+    .main-box{
+        background-color: #e7d7c9;
+    }
+    .main-area{
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+}
