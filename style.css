@@ -2,6 +2,8 @@ body{
     margin: 0;
     background-color: #e7d7c9;
     font-family: sans-serif;
+    text-align: center;
+    display: block;
 }
 .main-box{
     min-height: 1000px;
@@ -101,6 +103,9 @@ td>span{
 .input-area>button:hover{
     background-color:#d4b2a7 ;
 }
+.space{
+    display: none;
+}
 @media (max-width:1400px) {
     .main-box{
         background-color: #e7d7c9;
@@ -109,5 +114,29 @@ td>span{
         flex-direction: column;
         text-align: center;
         height: 100vh;
+    }
+}
+@media (max-width:600px) {
+    .main-info{
+        flex-direction: column;
+        background-color: #e7d7c9;
+    }
+    .space{
+        display: block;
+        margin-bottom: 210px;
+    }
+    table,th,td{
+        border: 2px solid #a38f85;
+    }
+    .main-info>a{
+        position: static;
+    }
+    .img-area{
+        display: none;
+    }
+    .container>h1{
+        background-color: #d4b2a7;
+        padding: 20px;
+        border-radius: 4rem;
     }
 }
